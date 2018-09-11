@@ -1,0 +1,112 @@
+
+/*
+    light-yellow :#FCE404
+    dark-yellow : #FCBC0C
+    clip-path maker tool to specify x,y
+*/
+
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.7;
+    color:#777;
+    padding: 30px;
+}
+
+
+.header {
+    height:95vh;
+    background-image:linear-gradient(
+            to right bottom,
+            rgba(250, 237, 121, 0.801),rgba(252, 188, 12, 0.801)),
+            url(../img/stil-243530-unsplash.jpg);
+            
+    background-size:cover;
+    background-position: top;
+    position: relative;
+    clip-path: polygon(0 0 ,100% 0 , 100% 85%,0 100%);
+}
+   
+    
+
+.logo-box {
+    position: absolute;
+    top:40px;
+    left:40px;
+}
+
+.logo {
+    height: 50px;
+}
+
+
+.text-box {
+    position:absolute;
+    top:45%;
+    left:50%;
+    transform: translate(-50%,-50%)
+}
+
+.heading-primary {
+    color:#fff;
+    text-transform: uppercase;
+    backface-visibility: hidden;
+}
+.heading-primary-main {
+    display: block;
+    font-size: 30px;
+    font-weight: 400;
+    letter-spacing:20px;
+    animation: moveInLeft;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+
+}
+
+.heading-primary-sub {
+    display: block;
+    font-size:18px;
+    font-weight:400;
+    letter-spacing:10px;
+    animation: moveInRight 1s ease-out;
+}
+
+@keyframes moveInLeft {
+    0% {
+        opacity:0;
+        tranfrom:translateX(-100px);
+    }
+
+    80% {
+        transform: translateX(10px);
+    }
+
+    100% {
+        opacity:1;
+        tranfrom:translate(0);
+    }
+}
+
+
+@keyframes moveInRight {
+    0% {
+        opacity:0;
+        tranfrom:translateX(100px);
+    }
+
+    80% {
+        transform: translateX(-10px);
+    }
+
+    100% {
+        opacity:1;
+        tranfrom:translate(0);
+    }
+}
