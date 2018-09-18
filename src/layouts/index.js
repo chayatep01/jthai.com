@@ -8,8 +8,9 @@ import Footer from '../components/footer'
 import './index.css'
 
 const Layout = ({ children, data }) => (
-  <div>
+  <div id="footer">
     <Header />
+    <Footer />
   </div>
 )
 

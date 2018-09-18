@@ -1,6 +1,6 @@
 import React from 'react'
 import Link from 'gatsby-link'
-import logo from '../img/logo.png'
+import logo from '../img/logo.jpg'
 
 const Header = () => (
   <div className="header">
@@ -12,7 +12,7 @@ const Header = () => (
         <span className="heading-primary-main">ร้านอาหารเจไทย </span>
         <span className="heading-primary-sub">Thai Vegeterian Resturant</span>
       </h1>
-        <p>C o m i n g    s o o n .. </p>
+       
       </div>
 
      
